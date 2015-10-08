@@ -9,16 +9,35 @@
     <body>
         <div ng-app="homeapp">
             <div ng-controller="homeController">
-                <div class="sidebar">
-                    <ul>
-                        <a ui-sref="compose"><li>Compose</li></a>
-                        <a ui-sref="inbox"><li>Inbox</li></a>
-                        <a ui-sref="sentbox"><li>Sent Item</li></a>
-                    </ul>
+                <div class="row">
+                    <div class="sidebar col s3">
+                        <div class="collection">
+                            <a ui-sref="compose" class="collection-item">Compose</a>
+                            <a ui-sref="inbox" class="collection-item">Inbox</a>
+                            <a ui-sref="sentbox" class="collection-item">Sent Item</a>
+                        </div>
+                        <!-- <ul>
+                            <a id="open-modal" class="modal-trigger"  href="#compose"><li>Compose</li></a>
+                            <a ui-sref="inbox"><li>Inbox</li></a>
+                            <a ui-sref="sentbox"><li>Sent Item</li></a>
+                        </ul> -->
+                    </div>
+                    
+                    
+                    <div class="col s9">
+                        <div ng-view></div>
+                    </div>
+                    
                 </div>
-
-                <div ng-view>
-
+                <!-- Modal Structure -->
+                <div id="compose" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
                 </div>
             </div>
         </div>
