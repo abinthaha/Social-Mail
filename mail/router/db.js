@@ -1,10 +1,11 @@
-
+var config = require('../../config.js');
 var mysql      = require('mysql');
-var connection;
+var connection = mysql.createConnection( config.DBConfig );
 
-  module.exports.connection = mysql.createConnection({
+module.exports.connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : 'syamsp',
-    database : 'Gmail'
+    password : 'qburst',
+    database : 'mailing_system'
   });
+module.exports = connection;
