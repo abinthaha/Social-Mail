@@ -38,7 +38,7 @@ module.exports = function(app) {
     db.query(sqlQuery,[response.user_name, response.password], function(err, rows, fields) {
       //db.end();
       if (rows.length!=0) {
-        console.log('loged in: ', rows);
+        console.log('logged in: ', rows);
         req.session.username = response.user_name;
         console.log(req.session);
         var data = readInbox(rows[0].user_id);
