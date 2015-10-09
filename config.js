@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var data = fs.readFileSync('./config.json'),
+var data = fs.readFileSync('./database.json'),
     config;
 
 try {

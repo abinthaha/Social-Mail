@@ -33,7 +33,7 @@ module.exports = function(app) {
       password:req.body.password
     };
 
-    var sqlQuery = "SELECT * from users where email = ? and password = ?";
+    var sqlQuery = "SELECT * FROM users WHERE email = admin@qburst.com AND password = admin";
 
     db.query(sqlQuery,[response.user_name, response.password], function(err, rows, fields) {
       //db.end();
@@ -48,6 +48,8 @@ module.exports = function(app) {
         res.render("home.html",(name = req.session.username));
       } else {
           console.log('Error while performing Query.');
+          console.log(err);
+          console.log(rows.length);
           res.render('index.html',(value = 'username or password is incorrect'));
       }
 

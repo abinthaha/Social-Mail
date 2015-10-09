@@ -21,12 +21,14 @@
     "url": "https://github.com/abinthaha/Social-Mail/issues"
   },
   "dependencies": {
+    "express": "~4.13.3",
     "browserify": "~11.2.0",
     "config": "~1.16.0",
     "nconf": "~0.8.1",
     "fs": "0.0.2",
     "gulp": "~3.9.0",
     "gulp-inject": "~3.0.0",
+    "db-migrate": "~0.9.23",
     "mysql": "~2.9.0",
     "body-parser": "~1.14.1",
     "express-session": "~1.11.3",
@@ -39,9 +41,6 @@
     "gulp-rename": "~1.2.2",
     "gulp-uglify": "~1.4.1",
     "gulp-sass": "~2.0.4",
-    "ejs": "~2.3.4",
-    "express": "^4.13.3",
-    "gulp": "^3.9.0",
-    "gulp-inject": "^3.0.0"
+    "ejs": "~2.3.4"
   }
 }

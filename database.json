@@ -1,0 +1,35 @@
+{
+  "DBConfig" : {
+    "host" : "localhost",
+    "user" : "root",
+    "password" : "qburst",
+    "database" : "mailing_system"
+  },
+  "dev": {
+    "driver": "sqlite3",
+    "filename": "~/dev.db"
+  },
+
+  "test": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+
+  "prod": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "qburst",
+    "host": "localhost",
+    "database": "mailing_system"
+
+  },
+
+  "pg": {
+    "driver": "pg",
+    "user": "root",
+    "password": "qburst",
+    "host": "localhost",
+    "database": "mailing_system",
+    "schema": "my_schema"
+  }
+}
