@@ -10,10 +10,11 @@ app.engine('html', require('ejs').renderFile);
 
 require('./mail/router/router.js')(app);
 require('./mail/router/index.js')(app);
+require('./mail/router/createuser.js')(app);
+require('./mail/router/deleteuser.js')(app);
 
 
 
-
-var server     =    app.listen(3000,function(){
+var server = app.listen(3000,function(){
   console.log("Express is running on port 3000");
 });
