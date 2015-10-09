@@ -1,0 +1,32 @@
+{
+  "DBConfig" : {
+    "host" : "localhost",
+    "user" : "root",
+    "password" : "qburst",
+    "database" : "gmail"
+  },
+"dev": {
+    "driver": "sqlite3",
+    "filename": "~/dev.db"
+  },
+ 
+  "test": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+ 
+  "prod": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "root"
+  },
+ 
+  "pg": {
+    "driver": "pg",
+    "user": "test",
+    "password": "test",
+    "host": "localhost",
+    "database": "mydb",
+    "schema": "my_schema"
+  }
+}
